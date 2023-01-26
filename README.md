@@ -2,7 +2,7 @@
 JsonDataEngine is a small library that allows to transform json data by adding another json as a payload. Can be used for example with Microsoft Teams Adaptive cards.
 The json data can be used as a "template" while the payload contains the variables.
 
-Example of Json data "template" to modify:
+Example of Json data "template" to modify:<br />
 {
     "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
     "version": "1.5",
