@@ -4,7 +4,7 @@ The json data can be used as a "template" while the payload contains the variabl
 
 Example of Json data "template" to modify:<br />
 {  
-&nbsp;"$schema": "http://adaptivecards.io/schemas/adaptive-card.json",  
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",  
     "version": "1.5",  
     "type": "AdaptiveCard",  
     "body": [  
