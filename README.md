@@ -29,7 +29,7 @@ Example of Payload:
         "fullname": "Leonardo Galilee"
       },
       {
-        "fullname": "Rob NalyD"
+        "fullname": "Rob Nalyd"
       }
     ]
   }
@@ -37,3 +37,12 @@ Example of Payload:
 
 # Getting Started
 Just add the package dll to your project.
+A few functions are supported:
+    - use the dollars sign in a string property followed by the json path based on payload structure.
+         - example "text": "$contact.greetings"
+    - use the following structure for arrays: foreach $payloadJsonPathPointingToAnArray use <whatever you want to be repeated, you can do recursive if needed, escape double quotes>
+         - example "facts": "foreach $contact.friends use { \"title\": \"Friend Name\", \"value\": \"$fullname\" }" will result in 
+         "facts": [ { "title": "Friend Name", "value": "Leonardo Galilee" }, { "title": "Friend Name", "value": "Rob Nalyd" } ] 
+         
+Have fun!
+
